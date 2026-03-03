@@ -3,4 +3,11 @@ project(professional_cpp)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(professional_cpp main.cpp)
+add_executable(
+    professional_cpp 
+    main.cpp 
+    Employee.cpp
+    Database.cpp
+)
+
+target_include_directories(professional_cpp PRIVATE include)
